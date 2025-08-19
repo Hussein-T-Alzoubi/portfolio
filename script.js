@@ -5,6 +5,13 @@ hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
+// اجعل الوضع الداكن افتراضي عند التحميل
+window.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("dark-mode");
+  themeToggle.classList.remove("fa-moon");
+  themeToggle.classList.add("fa-sun");
+});
+
 // Dark Mode Toggle
 const themeToggle = document.querySelector(".theme-toggle");
 themeToggle.addEventListener("click", () => {
@@ -95,3 +102,4 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
