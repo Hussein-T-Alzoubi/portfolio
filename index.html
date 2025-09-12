@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>حسين الزعبي | Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,512 +19,397 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav class="navbar">
-          <img class="icon"
-                src="./icon.png"
-                alt="icon"
-              />
-          <a href="#" class="logo"></i>Hussein Alzoubi
-           </a>
-          <ul class="nav-links">
-
-            <li><a href="#home" class="active">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skills">SERVICE</a></li>
-            <li><a href="#portfolio">Work Experience</a></li>
-            <li><a href="#certificates">PROJECTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="https://www.linkedin.com/in/hussein-al-zoubi-879140335/" class="res">RESUME</a></li>
-
-            <i class="fas fa-moon theme-toggle"></i>
-
-
-          </ul>
-          <div class="header-actions">
-            <div class="hamburger">
-              <i class="fas fa-bars"></i>
-            </div>
-          </div>
-        </nav>
+    <nav class="glass">
+      <div class="logo">
+        <img src="logo.svg" alt="Hussein Al-Zaabi" class="logo-img" />
       </div>
-    </header>
+
+      <div class="nav-links">
+        <a href="#home" class="active">الرئيسية</a>
+        <a href="#about">عنّي</a>
+        <a href="#skills">المهارات</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#certificates">الشهادات</a>
+        <a href="#contact">اتصل بي</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- <button class="language-toggle" id="language-toggle">
+          <span>EN</span>
+        </button> -->
+        <button class="theme-toggle" id="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="menu-btn" id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
 
     <section id="home" class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-text animate-on-scroll">
-            <h3>
-             WELCOME TO MY PORTFOLIO! <br />
-             <tr></tr>
-             <span>Hussein Alzoubi</span>
-            </h3>
-            <p>
-              I turn ideas into stunning digital experiences. I specialize in
-              designing and developing modern, responsive websites that meet
-              your business needs.
-            </p>
-            <div class="hero-btns">
-              <a href="#portfolio" class="btn">View My Work</a>
-              <a href="#contact" class="btn btn-outline">Contact Me</a>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>حسين الزعبي</h1>
+          <p>
+            أحول الأفكار إلى تجارب ويب تفاعلية وجذابة باستخدام أحدث التقنيات
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">
+              <span>أعمالي</span>
+              <i class="fas fa-arrow-left"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>اتصل بي</span>
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <div class="img-container floating">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4E03AQGpGwhJiaDmwg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730737325753?e=1758153600&v=beta&t=olKdTBeOj0Z5xrvxjLaHs0wb_G4JGHRJlfW3H4cX-TM"
+              alt="Hussein Al-Zaabi"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">عنّي</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>مرحبًا، أنا حسين الزعبي</h3>
+          <p>
+            أنا مطور واجهات أمامية متخصص في إنشاء تجارب ويب استثنائية. لدي شغف
+            كبير لتحويل التصاميم إلى مواقع ويب تفاعلية وسريعة الاستجابة باستخدام
+            HTML, CSS, وJavaScript.
+          </p>
+          <p>
+            أعمل حاليًا كمطور ويب مستقل، وأستمتع بالتعاون مع العملاء لتحقيق
+            رؤيتهم وإنشاء حلول رقمية تلبي احتياجاتهم وتتجاوز توقعاتهم.
+          </p>
+
+          <div class="skills">
+            <span class="skill">HTML5</span>
+            <span class="skill">CSS3</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">React</span>
+            <span class="skill">Vue.js</span>
+            <span class="skill">SASS</span>
+            <span class="skill">Bootstrap</span>
+            <span class="skill">Git</span>
+          </div>
+
+          <div class="skill-progress">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML5 & CSS3</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress-bar" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>React</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress-bar" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>UI/UX Design</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress-bar" style="width: 80%"></div>
+              </div>
             </div>
           </div>
-          <div class="hero-img">
-            <div class="img-container">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D4E03AQGpGwhJiaDmwg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730737325753?e=1758153600&v=beta&t=olKdTBeOj0Z5xrvxjLaHs0wb_G4JGHRJlfW3H4cX-TM"
-                alt="Profile Picture"
-              />
+        </div>
+
+        <div class="about-image">
+          <div class="img-container">
+            <img
+              src="https://scontent-ams4-1.xx.fbcdn.net/v/t39.30808-6/493289868_3881399665459031_782564889435632941_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=U_dyRochBKYQ7kNvwFhY8HN&_nc_oc=AdnnWaWaLzSzaldCJstaX0EjslRS7qy99IU9-xNjnPm4IzgXt0s63ty7erIGUF1Nbus&_nc_zt=23&_nc_ht=scontent-ams4-1.xx&_nc_gid=OPtwVE0gUYiRcCswXTM3Mg&oh=00_AfauiUnrCJRkkSp_AsP7VSUrWSr1XLBYpuBT_2EhNPzE6g&oe=68CA49FC"
+              alt="Hussein Working"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <h2 class="section-title">مهاراتي</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>تطوير الواجهات الأمامية</h3>
+          <p>
+            أقوم بإنشاء مواقع ويب تفاعلية وسريعة الاستجابة باستخدام أحدث تقنيات
+            HTML5 و CSS3 و JavaScript.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <h3>أطر عمل JavaScript</h3>
+          <p>
+            أعمل مع مكتبات وأطر عمل مثل React و Vue.js لبناء تطبيقات ويب معقدة
+            وسهلة الصيانة.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>تصميم متجاوب</h3>
+          <p>
+            أصمم مواقع تتكيف مع جميع أحجام الشاشات لضمان تجربة مستخدم مثالية على
+            جميع الأجهزة.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3>تصميم واجهات المستخدم</h3>
+          <p>
+            أهتم بتفاصيل التصميم لإنشاء واجهات مستخدم جذابة وسهلة الاستخدام مع
+            الحفاظ على الاتساق البصري.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">مشاريعي</h2>
+      <div class="projects-grid">
+        <div class="project-card glass">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1772&q=80"
+            alt="Project 1"
+            class="project-img"
+          />
+          <div class="project-overlay">
+            <h3 class="project-title">منصة تعليمية</h3>
+            <p class="project-desc">
+              منصة تعليمية متكاملة تقدم دورات في مختلف المجالات مع نظام متكامل
+              للمحاضرات والاختبارات.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass">
+          <img
+            src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80"
+            alt="Project 2"
+            class="project-img"
+          />
+          <div class="project-overlay">
+            <h3 class="project-title">متجر إلكتروني</h3>
+            <p class="project-desc">
+              متجر إلكتروني متكامل مع نظام دفع وإدارة منتجات وعربة تسوق وتجربة
+              مستخدم محسنة.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Vue.js</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass">
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1715&q=80"
+            alt="Project 3"
+            class="project-img"
+          />
+          <div class="project-overlay">
+            <h3 class="project-title">لوحة تحكم analytics</h3>
+            <p class="project-desc">
+              لوحة تحكم متقدمة لعرض وتحليل البيانات مع رسوم بيانية تفاعلية
+              وتقارير قابلة للتخصيص.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">D3.js</span>
+              <span class="project-tag">Firebase</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section about">
-      <div class="container">
-        <div class="section-title animate-on-scroll">
-          <h2>About Me</h2>
-        </div>
-        <div class="about-content">
-          <div class="about-img animate-on-scroll">
-            <div class="img-container">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D4E03AQGpGwhJiaDmwg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730737325753?e=1758153600&v=beta&t=olKdTBeOj0Z5xrvxjLaHs0wb_G4JGHRJlfW3H4cX-TM"
-                alt="About Me"
-              />
-            </div>
+    <section id="certificates">
+      <h2 class="section-title">شهاداتي</h2>
+      <div class="certificates-slider">
+        <div class="certificate-card">
+          <img
+            src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1776&q=80"
+            alt="Certificate 1"
+            class="certificate-img"
+          />
+          <div class="certificate-content">
+            <h3 class="certificate-title">مطور React معتمد</h3>
+            <p class="certificate-issuer">Meta - منصة Coursera</p>
+            <p class="certificate-date">تم الحصول عليها: ديسمبر 2022</p>
           </div>
-          <div class="about-text animate-on-scroll">
-            <h3>Professional Front-End Developer</h3>
-            <p>
-              I am Hussein Alzoubi, a front-end developer with over 3 years of
-              experience. I specialize in creating modern and responsive
-              websites that meet client needs and enhance their digital
-              presence.
-            </p>
-            <p>
-              I believe in combining attractive design with advanced
-              functionality to create exceptional user experiences. I
-              continuously work on improving my skills to keep up with the
-              latest web development technologies.
-            </p>
+        </div>
 
-            <div class="skills">
-              <div class="skill">
-                <div class="skill-info">
-                  <span>HTML5 & CSS3</span>
-                  <span>95%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 95%"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="skill-info">
-                  <span>JavaScript</span>
-                  <span>90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 90%"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="skill-info">
-                  <span>React.js</span>
-                  <span>85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 85%"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="skill-info">
-                  <span>UI/UX Design</span>
-                  <span>80%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 80%"></div>
-                </div>
-              </div>
-            </div>
+        <div class="certificate-card">
+          <img
+            src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+            alt="Certificate 2"
+            class="certificate-img"
+          />
+          <div class="certificate-content">
+            <h3 class="certificate-title">مطور JavaScript متقدم</h3>
+            <p class="certificate-issuer">معهد MIT للتكنولوجيا</p>
+            <p class="certificate-date">تم الحصول عليها: أغسطس 2022</p>
+          </div>
+        </div>
 
-            <a href="#" class="btn" style="margin-top: 30px">Download CV</a>
+        <div class="certificate-card">
+          <img
+            src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80"
+            alt="Certificate 3"
+            class="certificate-img"
+          />
+          <div class="certificate-content">
+            <h3 class="certificate-title">مصمم واجهات المستخدم</h3>
+            <p class="certificate-issuer">Google - منصة Udemy</p>
+            <p class="certificate-date">تم الحصول عليها: مارس 2023</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section skills-section">
-      <div class="container">
-        <div class="section-title animate-on-scroll">
-          <h2>My Skills</h2>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-card animate-on-scroll">
-            <div class="skill-icon">
-              <i class="fab fa-html5"></i>
+    <section id="contact">
+      <h2 class="section-title">اتصل بي</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
             </div>
-            <h3>Web Development</h3>
-            <p>
-              Designing and developing professional and responsive websites
-              using the latest HTML5, CSS3, and JavaScript technologies.
-            </p>
-          </div>
-          <div class="skill-card animate-on-scroll">
-            <div class="skill-icon">
-              <i class="fab fa-react"></i>
+            <div class="contact-details">
+              <h3>الهاتف</h3>
+              <p>+963 981 356 083</p>
             </div>
-            <h3>Frameworks</h3>
-            <p>
-              Developing interactive web applications using React.js and Vue.js
-              with a focus on performance and user experience.
-            </p>
           </div>
-          <div class="skill-card animate-on-scroll">
-            <div class="skill-icon">
-              <i class="fas fa-mobile-alt"></i>
-            </div>
-            <h3>Responsive Design</h3>
-            <p>
-              Designing responsive websites that work seamlessly on all devices,
-              from mobile phones to desktop computers.
-            </p>
-          </div>
-          <div class="skill-card animate-on-scroll">
-            <div class="skill-icon">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <h3>UI/UX Design</h3>
-            <p>
-              Creating intuitive and attractive user interface designs with a
-              focus on user experience and improving interaction.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="portfolio" class="section portfolio">
-      <div class="container">
-        <div class="section-title animate-on-scroll">
-          <h2>My Portfolio</h2>
-        </div>
-        <div class="portfolio-filters animate-on-scroll">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="web">Websites</button>
-          <button class="filter-btn" data-filter="app">Apps</button>
-          <button class="filter-btn" data-filter="design">Designs</button>
-        </div>
-        <div class="portfolio-grid">
-          <div class="portfolio-item animate-on-scroll" data-category="web">
-            <div class="portfolio-img">
-              <img
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                alt="Project 1"
-              />
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
             </div>
-            <div class="portfolio-overlay">
-              <h3>E-commerce Website</h3>
-              <p>
-                Design and development of a complete e-commerce store for tech
-                products.
-              </p>
-              <a href="#" class="btn btn-outline">View Project</a>
+            <div class="contact-details">
+              <h3>البريد الإلكتروني</h3>
+              <p>eng.husseinalzoubi@gmail.com</p>
             </div>
           </div>
-          <div class="portfolio-item animate-on-scroll" data-category="app">
-            <div class="portfolio-img">
-              <img
-                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                alt="Project 2"
-              />
-            </div>
-            <div class="portfolio-overlay">
-              <h3>Medical App</h3>
-              <p>
-                An app for booking medical appointments and tracking health
-                history.
-              </p>
-              <a href="#" class="btn btn-outline">View Project</a>
-            </div>
-          </div>
-          <div class="portfolio-item animate-on-scroll" data-category="design">
-            <div class="portfolio-img">
-              <img
-                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
-                alt="Project 3"
-              />
-            </div>
-            <div class="portfolio-overlay">
-              <h3>App Interface Design</h3>
-              <p>UI design for a fast delivery service app.</p>
-              <a href="#" class="btn btn-outline">View Project</a>
-            </div>
-          </div>
-          <div class="portfolio-item animate-on-scroll" data-category="web">
-            <div class="portfolio-img">
-              <img
-                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-                alt="Project 4"
-              />
-            </div>
-            <div class="portfolio-overlay">
-              <h3>Educational Website</h3>
-              <p>
-                A complete educational platform with a learning management
-                system.
-              </p>
-              <a href="#" class="btn btn-outline">View Project</a>
-            </div>
-          </div>
-          <div class="portfolio-item animate-on-scroll" data-category="app">
-            <div class="portfolio-img">
-              <img
-                src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                alt="Project 5"
-              />
-            </div>
-            <div class="portfolio-overlay">
-              <h3>Fitness App</h3>
-              <p>An app to track sports activities and healthy nutrition.</p>
-              <a href="#" class="btn btn-outline">View Project</a>
-            </div>
-          </div>
-          <div class="portfolio-item animate-on-scroll" data-category="design">
-            <div class="portfolio-img">
-              <img
-                src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                alt="Project 6"
-              />
-            </div>
-            <div class="portfolio-overlay">
-              <h3>Visual Identity</h3>
-              <p>Full visual identity design for an educational institution.</p>
-              <a href="#" class="btn btn-outline">View Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="certificates" class="section certificates">
-      <div class="container">
-        <div class="section-title animate-on-scroll">
-          <h2>Certificates</h2>
-        </div>
-        <div class="certificates-slider animate-on-scroll">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="certificate-card">
-                  <div class="certificate-img">
-                    <img
-                      src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80"
-                      alt="Certificate 1"
-                    />
-                  </div>
-                  <div class="certificate-content">
-                    <h3>Advanced Web Development Certificate</h3>
-                    <p>Coursera - 2023</p>
-                    <a href="#" class="btn">View Certificate</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="certificate-card">
-                  <div class="certificate-img">
-                    <img
-                      src="https://images.unsplash.com/photo-1593720216276-f3c959828551?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                      alt="Certificate 2"
-                    />
-                  </div>
-                  <div class="certificate-content">
-                    <h3>React.js Fundamentals</h3>
-                    <p>Udemy - 2022</p>
-                    <a href="#" class="btn">View Certificate</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="certificate-card">
-                  <div class="certificate-img">
-                    <img
-                      src="https://images.unsplash.com/photo-1626775238053-4315516082a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                      alt="Certificate 3"
-                    />
-                  </div>
-                  <div class="certificate-content">
-                    <h3>Advanced UI/UX Course</h3>
-                    <p>Coursera - 2021</p>
-                    <a href="#" class="btn">View Certificate</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="certificate-card">
-                  <div class="certificate-img">
-                    <img
-                      src="https://images.unsplash.com/photo-1588147285590-f5a60a75878d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                      alt="Certificate 4"
-                    />
-                  </div>
-                  <div class="certificate-content">
-                    <h3>JavaScript Algorithms and Data Structures</h3>
-                    <p>freeCodeCamp - 2020</p>
-                    <a href="#" class="btn">View Certificate</a>
-                  </div>
-                </div>
-              </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="contact-details">
+              <h3>العنوان</h3>
+              <p>درعا, | الجمهورية العربية السورية</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section id="contact" class="section contact">
-      <div class="container">
-        <div class="section-title animate-on-scroll">
-          <h2>Contact Me</h2>
-        </div>
-        <div class="contact-content">
-          <div class="contact-info animate-on-scroll">
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-              <div class="contact-details">
-                <h3>Email</h3>
-                <p>your-email@example.com</p>
-              </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">الاسم الكامل</label>
+              <input type="text" id="name" class="form-control" required />
             </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-              <div class="contact-details">
-                <h3>Phone</h3>
-                <p>+123 456 7890</p>
-              </div>
+
+            <div class="form-group">
+              <label for="email">البريد الإلكتروني</label>
+              <input type="email" id="email" class="form-control" required />
             </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="contact-details">
-                <h3>Location</h3>
-                <p>Syria, Damascus</p>
-              </div>
+
+            <div class="form-group">
+              <label for="message">الرسالة</label>
+              <textarea id="message" class="form-control" required></textarea>
             </div>
-          </div>
-          <div class="contact-form animate-on-scroll">
-            <form action="#" method="POST">
-              <div class="form-group">
-                <label for="name">Your Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="form-control"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Your Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-control"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="message">Your Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="form-control"
-                  rows="6"
-                  placeholder="Enter your message"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-          </div>
+
+            <button type="submit" class="submit-btn">
+              <span>إرسال الرسالة</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
       </div>
     </section>
 
     <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-col">
-            <h3>Hussein Alzoubi</h3>
-            <p>
-              I am a professional front-end developer who loves to turn ideas
-              into stunning digital experiences.
-            </p>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-            </div>
-          </div>
-          <div class="footer-col">
-            <h3>Quick Links</h3>
-            <ul class="footer-links">
-              <li>
-                <a href="#home"><i class="fas fa-angle-right"></i> Home</a>
-              </li>
-              <li>
-                <a href="#about"><i class="fas fa-angle-right"></i> About</a>
-              </li>
-              <li>
-                <a href="#skills"><i class="fas fa-angle-right"></i> Skills</a>
-              </li>
-              <li>
-                <a href="#portfolio"
-                  ><i class="fas fa-angle-right"></i> Portfolio</a
-                >
-              </li>
-              <li>
-                <a href="#contact"
-                  ><i class="fas fa-angle-right"></i> Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>Contact Info</h3>
-            <ul class="footer-links">
-              <li>
-                <a href="#"
-                  ><i class="fas fa-angle-right"></i> your-email@example.com</a
-                >
-              </li>
-              <li>
-                <a href="#"><i class="fas fa-angle-right"></i> +123 456 7890</a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fas fa-angle-right"></i> Syria, Damascus</a
-                >
-              </li>
-            </ul>
-          </div>
+      <div class="footer-content">
+        <div class="footer-logo">حسين الزعبي</div>
+
+        <div class="footer-links">
+          <a href="#home">الرئيسية</a>
+          <a href="#about">عنّي</a>
+          <a href="#skills">المهارات</a>
+          <a href="#projects">المشاريع</a>
+          <a href="#certificates">الشهادات</a>
+          <a href="#contact">اتصل بي</a>
         </div>
+
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <i class="fab fa-x"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-behance"></i>
+          </a>
+        </div>
+
         <div class="copyright">
-          <p>&copy; 2024 Hussein Alzoubi. All rights reserved.</p>
+          <p>♥️. MADE . WITH</p>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
-
-
