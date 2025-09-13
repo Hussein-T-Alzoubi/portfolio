@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
+    <link rel="icon" href="logo.svg" type="image-icon" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>حسين الزعبي | Portfolio</title>
@@ -20,9 +21,12 @@
   </head>
   <body>
     <nav class="glass">
-      <div class="logo">
-        <img src="logo.svg" alt="Hussein Al-Zaabi" class="logo-img" />
-      </div>
+      <button class="menu-btn" id="menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <button class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
 
       <div class="nav-links">
         <a href="#home" class="active">الرئيسية</a>
@@ -37,12 +41,9 @@
         <!-- <button class="language-toggle" id="language-toggle">
           <span>EN</span>
         </button> -->
-        <button class="theme-toggle" id="theme-toggle">
-          <i class="fas fa-moon"></i>
-        </button>
-        <button class="menu-btn" id="menu-btn">
-          <i class="fas fa-bars"></i>
-        </button>
+        <div class="logo">
+          <img src="logo.svg" alt="Hussein Al-Zaabi" class="logo-img" />
+        </div>
       </div>
     </nav>
 
@@ -348,29 +349,7 @@
           </div>
         </div>
 
-        <div class="contact-form">
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="name">الاسم الكامل</label>
-              <input type="text" id="name" class="form-control" required />
-            </div>
-
-            <div class="form-group">
-              <label for="email">البريد الإلكتروني</label>
-              <input type="email" id="email" class="form-control" required />
-            </div>
-
-            <div class="form-group">
-              <label for="message">الرسالة</label>
-              <textarea id="message" class="form-control" required></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">
-              <span>إرسال الرسالة</span>
-              <i class="fas fa-paper-plane"></i>
-            </button>
-          </form>
-        </div>
+       
       </div>
     </section>
 
