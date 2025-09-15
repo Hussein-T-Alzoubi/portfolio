@@ -68,10 +68,3 @@ gsap.utils
       }
     );
   });
-
-// إرسال نموذج الاتصال
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("شكراً لك على رسالتك! سأرد عليك في أقرب وقت ممكن.");
-  this.reset();
-});

@@ -337,68 +337,6 @@ section {
   line-height: 1.9;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2.5rem;
-}
-
-.skill {
-  padding: 0.7rem 1.8rem;
-  border-radius: 50px;
-  background: var(--card-bg);
-  border: 1px solid var(--glass-border);
-  font-size: 0.95rem;
-  transition: var(--transition);
-}
-
-.skill:hover {
-  background: linear-gradient(45deg, var(--accent), var(--accent-secondary));
-  color: white;
-  transform: translateY(-3px);
-}
-
-.skill-progress {
-  margin-top: 2rem;
-}
-
-.skill-item {
-  margin-bottom: 1.5rem;
-}
-
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-  color: var(--text-secondary);
-}
-
-.skill-bar {
-  height: 8px;
-  background: var(--glass-bg);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.skill-progress-bar {
-  height: 100%;
-  background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
-  border-radius: 4px;
-  position: relative;
-}
-
-.skill-progress-bar::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3));
-  animation: shimmer 2s infinite;
-}
-
 .about-image {
   display: flex;
   justify-content: center;
@@ -444,14 +382,14 @@ section {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .skill-card {
   background: var(--card-bg);
-  padding: 2.5rem;
+  padding: 1rem;
   border-radius: 20px;
   box-shadow: var(--shadow);
   transition: var(--transition);
@@ -462,7 +400,8 @@ section {
 
 .skill-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 30px rgba(0, 201, 246, 0.2);
+  border: 1px solid rgb(0, 242, 255);
 }
 
 .skill-icon {
@@ -639,10 +578,16 @@ section {
   color: var(--accent);
 }
 
+.skill-img {
+  height: 100px;
+}
 .contact-details h3 {
   font-size: 1.2rem;
   margin-bottom: 0.3rem;
   color: var(--text-primary);
+}
+.contact-links {
+  text-decoration: none;
 }
 
 .contact-details p {
@@ -886,6 +831,13 @@ footer {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+  .btn {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -902,8 +854,11 @@ footer {
   }
 
   .btn {
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     font-size: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   .hero-img .img-container {
