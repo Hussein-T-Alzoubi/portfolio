@@ -137,6 +137,8 @@ nav.scrolled {
 }
 
 .theme-toggle {
+  position: absolute;
+  top: 3rem;
   font-size: 1.3rem;
   cursor: pointer;
   color: var(--text-primary);
@@ -838,6 +840,12 @@ footer {
     flex-wrap: wrap;
     gap: 20px;
   }
+  .theme-toggle {
+  position: fixed;
+  left: 10rem;
+  top: 3rem;
+ 
+}
 }
 
 @media (max-width: 768px) {
@@ -937,6 +945,8 @@ footer {
   padding: 0 2rem; /* إضافة حشو جانبي */
 }
 .language-toggle {
+  position: relative;
+  top: -1.3rem;
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   color: var(--text-primary);
@@ -952,4 +962,109 @@ footer {
   background: linear-gradient(45deg, var(--accent), var(--accent-secondary));
   color: white;
   transform: translateY(-2px);
+}
+
+/* إضافة هذه الأنماط في نهاية الملف */
+
+/* أنماط خاصة باللغة الإنجليزية والاتجاه LTR */
+[dir="ltr"] body {
+  text-align: left;
+}
+
+[dir="ltr"] .hero {
+  text-align: left;
+}
+
+[dir="ltr"] .hero-content {
+  direction: ltr;
+}
+
+[dir="ltr"] .about-content {
+  direction: ltr;
+}
+
+[dir="ltr"] .section-title::after {
+  right: auto;
+  left: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 100%;
+  border-top-right-radius: 0;
+  border-top-left-radius: 100%;
+}
+
+[dir="ltr"] .hero-btns .btn i {
+  transform: rotate(180deg);
+}
+
+[dir="ltr"] .nav-links {
+  direction: ltr;
+}
+
+[dir="ltr"] .contact-info {
+  direction: ltr;
+}
+
+[dir="ltr"] .footer-links {
+  direction: ltr;
+}
+
+[dir="ltr"] .social-links {
+  direction: ltr;
+}
+
+/* تعديلات للزر العائم */
+.language-toggle {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.language-toggle:hover {
+  background: linear-gradient(45deg, var(--accent), var(--accent-secondary));
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* تحسينات للعرض على الجوال */
+@media (max-width: 768px) {
+  .language-toggle {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .language-toggle i {
+    font-size: 0.9rem;
+  }
+}
+
+/* تحسينات للاتجاه LTR في القائمة على الجوال */
+@media (max-width: 992px) {
+  [dir="ltr"] .nav-links {
+    right: -100%;
+    left: auto;
+  }
+
+  [dir="ltr"] .nav-links.active {
+    right: 0;
+    left: auto;
+  }
+}
+
+/* تأثيرات انتقال سلسة للغات */
+nav,
+section,
+footer,
+.btn,
+.skill-card,
+.project-card {
+  transition: all 0.3s ease;
 }
